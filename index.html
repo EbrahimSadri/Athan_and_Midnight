@@ -176,7 +176,7 @@
         country = get_rand_array_item(keys);
         city = get_rand_array_item(timeings_Locations[country]);
         document.querySelector("#_location_").innerHTML = city + ", " + country
-        return "http://api.aladhan.com/v1/timingsByCity?city="+city+"&country="+country+"&method=3"
+        return "https://api.aladhan.com/v1/timingsByCity?city="+city+"&country="+country+"&method=3"
       }
 
       function get_date() {
