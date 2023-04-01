@@ -188,7 +188,7 @@
         timezone = document.querySelector("#timezone").value;
         var today_day = new Date();
         let dd = String(today_day.getDate('en-UK', {timeZone:timezone})).padStart(2, "0");
-        let month = today_day.toLocaleString('en-UK', {timeZone:timezone, month:'short'});
+        let month = today_day.toLocaleString('en-UK', {timeZone:timezone, month:'long'});
         let yyyy = today_day.getFullYear('en-UK', {timeZone:timezone});
         let today = dd + "/" + month + "/" + yyyy;
         document.querySelector("#_date_").innerHTML = today;
